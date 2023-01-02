@@ -14,7 +14,7 @@ const Signup = (props) => {
     const { name, email, password, cpassword } = credentials;
     if (password === cpassword) {
       const response = await fetch(
-        "https://inotebook-345.herokuapp.com//api/auth/createUser",
+        "https://inotebook-345.herokuapp.com/api/auth/createUser",
         {
           method: "POST",
           headers: {
