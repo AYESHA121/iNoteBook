@@ -14,7 +14,7 @@ const Signup = (props) => {
     const { name, email, password, cpassword } = credentials;
     if (password === cpassword) {
       const response = await fetch(
-        "https://inotebook-cloud-api.onrender.com/auth/createUser",
+        "https://eclectic-cranachan-cd2615.netlify.app/.netlify/functions/api/auth/createUser",
         {
           method: "POST",
           headers: {
