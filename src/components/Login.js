@@ -6,7 +6,7 @@ const Login = (props) => {
   let navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://inotbook-api.netlify.app/.netlify/functions/api/auth/login", {
+    const response = await fetch("https://inotebook-345.herokuapp.com//api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
